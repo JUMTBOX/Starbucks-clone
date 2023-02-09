@@ -830,6 +830,120 @@ header .badges .badge img {
   opacity: 1;
 }
 .findstore:hover .inner .btn.btn--black {
-  transition: transform 2.5s;
+  transition: transform 2.5s, color 0.6s, background-color 0.6s;
   transform: translateX(0);
+}
+/* FOOTER */
+footer {
+  position: relative;
+  background-color: #2c2a29;
+  color: #f6f5ef;
+}
+footer .inner {
+  width: 70%;
+}
+
+/* FOOTER MENU */
+footer .inner .footer__menu {
+  display: flex;
+}
+
+footer .inner .footer__menu .left {
+  width: 90%;
+  margin-bottom: 50px;
+}
+
+footer .inner .footer__menu .left .menu {
+  display: flex;
+  margin: 30px 50px;
+  justify-content: space-around;
+}
+/* footer .inner .footer__menu .left .menu > li {
+} */
+footer .inner .footer__menu .left .menu > li > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .inner .footer__menu .left .menu > li > ul > a {
+  line-height: 40px;
+  font-size: 16px;
+  color: #fff;
+}
+footer .inner .footer__menu .left .menu > li > ul > li {
+  font-size: 12px;
+  line-height: 24px;
+}
+footer .inner .footer__menu .right {
+  position: absolute;
+  width: 10%;
+  top: 30px;
+  right: -50px;
+}
+/* footer .inner .footer__menu .right img {
+} */
+
+footer .inner .footer__menu .left .menu > li > ul > a:hover {
+  text-decoration: underline;
+}
+footer .inner .footer__menu .left .menu > li > ul > li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* FOOTER AWARDS */
+footer .inner .footer__awards {
+  display: flex;
+  justify-content: center;
+  margin: 30px 5px;
+  height: 40px;
+}
+
+/* FOOTER SUBMENU */
+footer .inner .footer__sub-menu {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  position: relative;
+}
+footer .inner .footer__sub-menu > ul {
+  display: flex;
+  justify-content: center;
+}
+footer .inner .footer__sub-menu > ul > li {
+  margin: 0 5px;
+}
+footer .inner .footer__sub-menu > ul .contour {
+  color: #45434c;
+}
+footer .inner .footer__sub-menu > ul li a {
+  color: #fff;
+  font-size: 12px;
+}
+footer .inner .footer__sub-menu > ul li:first-child a {
+  color: #00704a;
+}
+footer .inner .footer__sub-menu > ul li a:hover,
+footer .inner .footer__sub-menu > ul li:first-child a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER BTN */
+footer .inner .footer__btn {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}
+footer .inner .footer__btn .btn.btn--white {
+  background-color: transparent;
+  color: #fff;
+  margin: 8px;
+  font-size: 12px;
+}
+
+/* FOOTER COPYLIGHT */
+footer .inner .footer__copylight p {
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
 }
