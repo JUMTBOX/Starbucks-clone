@@ -171,14 +171,12 @@ header .inner .sub-menu .search > input {
   outline: none;
   transition: width 0.4s;
 }
-header .inner .sub-menu .search > input::placeholder {
+header .inner .sub-menu .search > input.close {
   visibility: hidden;
 }
+
 header .inner .sub-menu .search > input:focus {
   width: 190px;
-}
-header .inner .sub-menu .search > input:focus::placeholder {
-  visibility: visible;
 }
 header .inner .sub-menu .search > .material-symbols-outlined {
   position: absolute;
@@ -188,6 +186,7 @@ header .inner .sub-menu .search > .material-symbols-outlined {
   height: 24px;
   margin: auto;
   right: 5px;
+  z-index: 3;
 }
 
 /* MAIN MENU */
